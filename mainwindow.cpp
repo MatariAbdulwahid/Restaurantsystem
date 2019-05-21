@@ -52,20 +52,20 @@ void MainWindow::on_actionItems_triggered()
 
 void MainWindow::on_btnLogin_clicked()
 {
-    bool log ;
-    Login lg ;
-    if(!log ){
-    lg.show();
-    lg.exec();
-    log = true ;
-    ui->btnLogin->setText("abmelden");
-    }
-    else  {
-    exit(0);
-    log = false ;
-    }
+   // bool chek = true  ;
+     Login lg ;
+
+     lg.show();
+     lg.exec();
 
 
+    if(lg.getState == true ){
+     // ui->btnLogin->setText("abmelden");
+      logIncheck();
+     // chek = false ;
+      lg.getState = false;
+      ui->btnLogin->hide();  //hide the button
+    }
 }
 
 void MainWindow::logIncheck(){

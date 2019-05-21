@@ -70,7 +70,7 @@ void Menus::on_btn_Hauptisch_clicked()
     ui->frm3->setHidden(true); //to hide the frame foods
     ui->frm4->setHidden(true);//to hide the frame drinks
     ui->frm5->setHidden(true);
-    ui->textBrowser->append("hei");
+
 
 
 

@@ -20,38 +20,18 @@ Login::~Login()
 
 void Login::on_btn_login_clicked()
 {
-     MainWindow mw;
      QString username , psw ;
      username = ui->ed_txt1->text();
      psw = ui->ed_txt2->text();
      if(username == "abdul" && psw == "123"){
-
          this->hide();
-
          QMessageBox::about(this , "" ,"login success");
-
-         mw.logIncheck();
-
-
+         getState = true ;  //return true when the password corect
      } else {
         QMessageBox::warning(this ,"Error" ,"Password oder username is wrong" ,nullptr , nullptr);
-}
+        getState = false ;
+     }
 
 }
 
-int Dconnect(){
-    QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
-    db.setHostName("LOCALHOST\\SQLEXPRESS");
-    db.setDatabaseName("Rersturant");
-    db.setUserName("Abdul");
-    db.setPassword("");
 
-    int a ;
-    if(db.open()){
-            a = 1;
-    }
-    else {
-           a = 1;
-    }
-    return a;
-}
