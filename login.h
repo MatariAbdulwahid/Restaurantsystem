@@ -19,7 +19,6 @@ private slots:
 
 
     void on_btu_add_clicked();
-
     void on_btn_login_clicked();
 
 private:
