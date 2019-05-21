@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>C:/Users/Abdul/Desktop/icons qt/list.png</file>
+        <file>C:/Users/Abdul/Desktop/icons qt/main.png</file>
+        <file>C:/Users/Abdul/Desktop/icons qt/menu.jpg</file>
+        <file>C:/Users/Abdul/Desktop/icons qt/static.png</file>
+        <file>C:/Users/Abdul/Desktop/image/exit.ico</file>
+        <file>C:/Users/Abdul/Desktop/image/Users-icon.png</file>
+        <file>C:/Users/Abdul/Desktop/image/setting.png</file>
+        <file>C:/Users/Abdul/Desktop/hd-da-ivan.jpg</file>
+    </qresource>
+</RCC>

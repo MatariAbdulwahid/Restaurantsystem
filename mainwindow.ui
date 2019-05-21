@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image : url(:/C:/Users/Abdul/Desktop/hd-da-ivan.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="btnLogin">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image : url(:/C:/Users/Abdul/Desktop/image/exit.ico);
+
+
+font-color:(255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>anmelden</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>843</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain">
+    <property name="title">
+     <string>Main</string>
+    </property>
+    <addaction name="actionADD"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionLogout"/>
+    <addaction name="actionItems"/>
+    <addaction name="actionSetting"/>
+    <addaction name="actionUsers_mange"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionf"/>
+   </widget>
+   <addaction name="menuMain"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionADD"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionItems"/>
+   <addaction name="actionLogout"/>
+   <addaction name="actionSetting"/>
+   <addaction name="actionUsers_mange"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionADD">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/icons qt/main.png</normaloff>:/C:/Users/Abdul/Desktop/icons qt/main.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="iconText">
+    <string>Home</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/icons qt/menu.jpg</normaloff>:/C:/Users/Abdul/Desktop/icons qt/menu.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Menus</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/icons qt/static.png</normaloff>:/C:/Users/Abdul/Desktop/icons qt/static.png</iconset>
+   </property>
+   <property name="text">
+    <string>statistic</string>
+   </property>
+  </action>
+  <action name="actionItems">
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/icons qt/list.png</normaloff>:/C:/Users/Abdul/Desktop/icons qt/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>Items</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/image/exit.ico</normaloff>:/C:/Users/Abdul/Desktop/image/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUsers_mange">
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/image/Users-icon.png</normaloff>:/C:/Users/Abdul/Desktop/image/Users-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Users mange</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="icon">
+    <iconset resource="myreso.qrc">
+     <normaloff>:/C:/Users/Abdul/Desktop/image/setting.png</normaloff>:/C:/Users/Abdul/Desktop/image/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+  <action name="actionf">
+   <property name="text">
+    <string>f</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myreso.qrc"/>
+ </resources>
+ <connections/>
+</ui>
