@@ -50,7 +50,7 @@ color: white;</string>
    </widget>
    <widget class="QCommandLinkButton" name="btnMenu">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>

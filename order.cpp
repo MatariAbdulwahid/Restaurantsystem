@@ -223,7 +223,7 @@ void Order::on_btn_Clear_clicked()
 
 void Order::on_btnPay_clicked()
 {
-    for (int i =0 ;i< ListOfFoods.count() ; i++){
+    for (int i =0 ;i< ListOfFoods.count() ; i++){ // save data in sql server
          dm.SetCommand("insert into ");
     }
     if(ui->mListWidght->count() !=0){
