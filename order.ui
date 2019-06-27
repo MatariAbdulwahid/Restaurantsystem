@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Order</class>
+ <widget class="QDialog" name="Order">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">backgorund-image:url(qrc:/backgro2.jpg);</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>531</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_11">
+    <item>
+     <widget class="QPushButton" name="btn_Hauptisch">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color :rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hauptgericht</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_salat">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color :rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Salat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_nachtisch">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color :rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Nachtisch</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_getr">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color :rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Getränke</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="gridFrame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>531</width>
+     <height>119</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout1">
+    <property name="horizontalSpacing">
+     <number>6</number>
+    </property>
+    <item row="2" column="0">
+     <widget class="QCommandLinkButton" name="btnSalat3">
+      <property name="text">
+       <string>Obst Salat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCommandLinkButton" name="btnSalat2">
+      <property name="text">
+       <string>Salat mit ole</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QCommandLinkButton" name="btnSalat4">
+      <property name="text">
+       <string>Fransosisch Salah</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QCommandLinkButton" name="btnSalat1">
+      <property name="text">
+       <string>Salat normal</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCommandLinkButton" name="btnSalat6">
+      <property name="text">
+       <string>Tomaten</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QCommandLinkButton" name="btnSalat1_2">
+      <property name="text">
+       <string>Salat itali</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="gridFrame_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>531</width>
+     <height>119</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0">
+     <widget class="QCommandLinkButton" name="btnFood3">
+      <property name="text">
+       <string>Hanschen mit rice</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCommandLinkButton" name="btnFood2">
+      <property name="text">
+       <string>Pizza mit fleisch</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QCommandLinkButton" name="btnFood4">
+      <property name="text">
+       <string>Checkcurray</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QCommandLinkButton" name="btnFood1">
+      <property name="text">
+       <string>Kabsa</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCommandLinkButton" name="btnFood6">
+      <property name="text">
+       <string>Fisch mit Salat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QCommandLinkButton" name="btnFood5">
+      <property name="text">
+       <string>Pizza mit käse</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="gridFrame_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>531</width>
+     <height>119</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="2" column="0">
+     <widget class="QCommandLinkButton" name="btnDrink3">
+      <property name="text">
+       <string>Saft</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCommandLinkButton" name="btnDrink2">
+      <property name="text">
+       <string>Cola 250l</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QCommandLinkButton" name="btnDrink4">
+      <property name="text">
+       <string>Pepsi 1l</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QCommandLinkButton" name="btnDrink1">
+      <property name="text">
+       <string>Pepsi 250l</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCommandLinkButton" name="btnDrink6">
+      <property name="text">
+       <string>Cola lite</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QCommandLinkButton" name="btnDrink5">
+      <property name="text">
+       <string>Fanta</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_Clear">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>280</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPreis">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>30</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color:rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="mListWidght">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>531</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnPay">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>390</y>
+     <width>172</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color :rgb(255, 85, 0);
+background-color :rgb(85, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Bezahlen</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>140</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>140</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tisch Nr</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

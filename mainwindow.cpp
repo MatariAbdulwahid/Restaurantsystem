@@ -1,10 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "QMessageBox"
-#include "login.h"
-#include "menus.h"
-#include "usersmange.h"
-#include "setting.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -18,14 +13,36 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_actionSave_triggered()
-{
-    Menus mn ;
-    mn.parentWidget();
-   // mn.setModal(true);
-    mn.exec();
+void MainWindow::Shutdown() {
+    exit(0);
 }
+void MainWindow::logIncheck(){
+
+     ui->btnMenu->setEnabled(true);
+     ui->btnKuche->setEnabled(true);
+
+}
+
+void MainWindow::on_btnlogin_clicked()
+{
+    if(ui->btnlogin->text() == "Anmelden"){
+
+        lg.setModal(true);
+        lg.exec();
+
+        if(lg.loginstatus == 1){
+            ui->btnlogin->setText("Abmelden");
+            logIncheck();
+
+        }
+    } else {
+        exit(0);
+        }
+
+
+}
+
+
 
 void MainWindow::on_actionExit_triggered()
 {
@@ -33,44 +50,44 @@ void MainWindow::on_actionExit_triggered()
 
 }
 
-void MainWindow::on_actionUsers_mange_triggered()
+void MainWindow::on_actionAdd_user_triggered()
 {
-    UsersMange um ;
-    um.parentWidget();
-   // mn.setModal(true);
-    um.exec();
+    if(lg.loginstatus == 1){
+        myuser.setModal(true);
+        myuser.exec();
+        logIncheck();
+    } else {
+        lg.setModal(true);
+        lg.exec();
+}
 }
 
-void MainWindow::on_actionItems_triggered()
+void MainWindow::on_actionadd_Food_triggered(){
+    if(lg.loginstatus == 1){
+        myFood.setModal(true);
+        myFood.exec();
+        logIncheck();
+    } else {
+        lg.setModal(true);
+        lg.exec();
+}
+}
+
+
+
+
+void MainWindow::on_btnMenu_clicked()
 {
-    Login ln ;
-    ln.setModal(true);
-    ln.exec();
+    myOrder.setModal(true);
+    myOrder.exec();
 }
 
-
-
-void MainWindow::on_btnLogin_clicked()
+void MainWindow::on_btnKuche_clicked()
 {
-   // bool chek = true  ;
-     Login lg ;
-
-     lg.show();
-     lg.exec();
-
-
-    if(lg.getState == true ){
-     // ui->btnLogin->setText("abmelden");
-      logIncheck();
-     // chek = false ;
-      lg.getState = false;
-      ui->btnLogin->hide();  //hide the button
-    }
-}
-
-void MainWindow::logIncheck(){
-
-     ui->mainToolBar->setEnabled(true);
 
 }
 
+void MainWindow::on_btn_exit_clicked()
+{
+     Shutdown();
+}
