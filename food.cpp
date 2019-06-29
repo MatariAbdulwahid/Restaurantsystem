@@ -1,7 +1,9 @@
 #include "food.h"
 #include "ui_food.h"
 #include "QMessageBox"
+
 Food::Food(QWidget *parent) :
+    
     QDialog(parent),
     ui(new Ui::Food)
 {
